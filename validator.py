@@ -7,7 +7,6 @@ class CityValidator:
         mapper = CITY_MAPPER[city]
         if sensor_id not in mapper.keys():
             raise ValueError("Sensor not in this city")
-
         return mapper[sensor_id]
 
 
