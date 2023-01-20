@@ -16,3 +16,19 @@ class ValueValidator:
         if 0 < value < 1500:
             return value
         raise ValueError("Value not in range 0-1500")
+
+
+class HighP10Validator:
+    @staticmethod
+    def validate(value):
+        if 50 < value:
+            return value
+        return None
+
+
+class HighP25Validator:
+    @staticmethod
+    def validate(value):
+        if 40 < value:
+            return value
+        return None
